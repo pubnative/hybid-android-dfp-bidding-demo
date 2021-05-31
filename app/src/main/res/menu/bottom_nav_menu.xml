@@ -16,9 +16,4 @@
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_interstitial" />
 
-    <item
-        android:id="@+id/navigation_rewarded"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_rewarded" />
-
 </menu>

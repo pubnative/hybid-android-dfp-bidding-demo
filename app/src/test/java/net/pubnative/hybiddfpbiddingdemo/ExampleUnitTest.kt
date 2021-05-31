@@ -1,4 +1,4 @@
-package net.pubnative.hybidmopubbiddingdemo
+package net.pubnative.hybiddfpbiddingdemo
 
 import org.junit.Test
 

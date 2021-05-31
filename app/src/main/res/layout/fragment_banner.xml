@@ -20,8 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <com.mopub.mobileads.MoPubView
-        android:id="@+id/mopub_banner"
+    <FrameLayout
+        android:id="@+id/dfp_banner_container"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"

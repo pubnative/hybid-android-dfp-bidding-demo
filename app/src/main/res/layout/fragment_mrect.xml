@@ -20,8 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <com.mopub.mobileads.MoPubView
-        android:id="@+id/mopub_mrect"
+    <FrameLayout
+        android:id="@+id/dfp_mrect_container"
         android:layout_width="300dp"
         android:layout_height="250dp"
         android:layout_gravity="center_horizontal"

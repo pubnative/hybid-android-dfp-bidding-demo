@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HyBid MoPub Bidding Demo</string>
+    <string name="app_name">HyBid DFP Bidding Demo</string>
 
     <string name="title_banner">Banner</string>
     <string name="title_mrect">mrect</string>

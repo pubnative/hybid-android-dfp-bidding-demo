@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "net.pubnative.hybidmopubbiddingdemo"
+        applicationId "net.pubnative.hybiddfpbiddingdemo"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
@@ -52,10 +52,8 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'net.pubnative:hybid.sdk:2.4.7'
-    implementation 'net.pubnative:hybid.adapters.mopub:2.4.7'
-    implementation('com.mopub:mopub-sdk:5.17.0@aar') {
-        transitive = true
-    }
+    implementation 'net.pubnative:hybid.adapters.dfp:2.4.7'
+    implementation 'com.google.android.gms:play-services-ads:19.7.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

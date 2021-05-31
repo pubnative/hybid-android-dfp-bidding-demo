@@ -1,4 +1,4 @@
-package net.pubnative.hybidmopubbiddingdemo
+package net.pubnative.hybiddfpbiddingdemo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("net.pubnative.hybidmopubbiddingdemo", appContext.packageName)
+        assertEquals("net.pubnative.hybiddfpbiddingdemo", appContext.packageName)
     }
 }

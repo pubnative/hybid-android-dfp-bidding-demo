@@ -7,26 +7,20 @@
 
     <fragment
         android:id="@+id/navigation_interstitial"
-        android:name="net.pubnative.hybidmopubbiddingdemo.ui.interstitial.InterstitialFragment"
+        android:name="net.pubnative.hybiddfpbiddingdemo.ui.interstitial.InterstitialFragment"
         android:label="@string/title_interstitial"
         tools:layout="@layout/fragment_interstitial" />
 
     <fragment
         android:id="@+id/navigation_banner"
-        android:name="net.pubnative.hybidmopubbiddingdemo.ui.banner.BannerFragment"
+        android:name="net.pubnative.hybiddfpbiddingdemo.ui.banner.BannerFragment"
         android:label="@string/title_banner"
         tools:layout="@layout/fragment_banner" />
 
     <fragment
         android:id="@+id/navigation_mrect"
-        android:name="net.pubnative.hybidmopubbiddingdemo.ui.mrect.MrectFragment"
+        android:name="net.pubnative.hybiddfpbiddingdemo.ui.mrect.MrectFragment"
         android:label="@string/title_mrect"
         tools:layout="@layout/fragment_mrect" />
-
-    <fragment
-        android:id="@+id/navigation_rewarded"
-        android:name="net.pubnative.hybidmopubbiddingdemo.ui.rewarded.RewardedFragment"
-        android:label="@string/title_rewarded"
-        tools:layout="@layout/fragment_rewarded" />
 
 </navigation>
