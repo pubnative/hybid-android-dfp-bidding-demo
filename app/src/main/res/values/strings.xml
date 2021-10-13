@@ -8,6 +8,8 @@
     <string name="title_native">Native</string>
 
     <string name="load">Load</string>
+    <string name="prepare">Prepare</string>
     <string name="show">Show</string>
 
+    <string name="ad_caching_enabled">Ad caching enabled</string>
 </resources>

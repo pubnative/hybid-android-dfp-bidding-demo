@@ -19,7 +19,7 @@ import net.pubnative.lite.sdk.models.Ad
 import net.pubnative.lite.sdk.utils.HeaderBiddingUtils
 
 
-class MrectFragment : Fragment(), RequestManager.RequestListener {
+class MrectFragment : Fragment(R.layout.fragment_mrect), RequestManager.RequestListener {
     val TAG = MrectFragment::class.java.simpleName
 
     private lateinit var requestManager: RequestManager
@@ -30,9 +30,6 @@ class MrectFragment : Fragment(), RequestManager.RequestListener {
 
     private val zoneId: String = "5"
     private val dfpAdUnitId: String = "/219576711/pnlite_dfp_mrect"
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
-        inflater.inflate(R.layout.fragment_mrect, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
