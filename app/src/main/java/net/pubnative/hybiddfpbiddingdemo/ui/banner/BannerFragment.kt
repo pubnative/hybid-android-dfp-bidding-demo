@@ -18,8 +18,7 @@ import net.pubnative.lite.sdk.api.RequestManager
 import net.pubnative.lite.sdk.models.Ad
 import net.pubnative.lite.sdk.utils.HeaderBiddingUtils
 
-
-class BannerFragment : Fragment(), RequestManager.RequestListener {
+class BannerFragment : Fragment(R.layout.fragment_banner), RequestManager.RequestListener {
     val TAG = BannerFragment::class.java.simpleName
 
     private lateinit var requestManager: RequestManager
@@ -29,9 +28,6 @@ class BannerFragment : Fragment(), RequestManager.RequestListener {
 
     private val zoneId: String = "2"
     private val dfpAdUnitId = "/219576711/pnlite_dfp_banner"
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
-        inflater.inflate(R.layout.fragment_banner, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -69,13 +65,19 @@ class BannerFragment : Fragment(), RequestManager.RequestListener {
         val builder = PublisherAdRequest.Builder()
 
         val keywordSet: Set<String> =
-            HeaderBiddingUtils.getHeaderBiddingKeywordsSet(ad, HeaderBiddingUtils.KeywordMode.TWO_DECIMALS)
+            HeaderBiddingUtils.getHeaderBiddingKeywordsSet(
+                ad,
+                HeaderBiddingUtils.KeywordMode.TWO_DECIMALS
+            )
         for (key in keywordSet) {
             builder.addKeyword(key)
         }
 
         val keywordBundle =
-            HeaderBiddingUtils.getHeaderBiddingKeywordsBundle(ad, HeaderBiddingUtils.KeywordMode.TWO_DECIMALS)
+            HeaderBiddingUtils.getHeaderBiddingKeywordsBundle(
+                ad,
+                HeaderBiddingUtils.KeywordMode.TWO_DECIMALS
+            )
         for (key in keywordBundle.keySet()) {
             builder.addCustomTargeting(key, keywordBundle.getString(key))
         }
